@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <TextView
+        android:id="@+id/textView13"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:text="Coffee"
+        android:textColor="#000000"
+        android:textSize="26sp" />
+
+    <EditText
+        android:id="@+id/editText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/textView13"
+        android:ems="10"
+        android:hint="Vol(mL) of Water"
+        android:inputType="numberDecimal" />
+
+    <EditText
+        android:id="@+id/editText2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/editText"
+        android:layout_marginTop="13dp"
+        android:ems="10"
+        android:hint="Weight(g) of coffee"
+        android:inputType="numberDecimal" />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:onClick="calCoffee"
+        android:layout_below="@+id/editText"
+        android:layout_marginEnd="19dp"
+        android:text="Calculate" />
+
+    <TextView
+        android:id="@+id/textView14"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/button3"
+        android:layout_below="@+id/textView13"
+        android:layout_marginStart="11dp"
+        android:text=""
+        android:textSize="14sp"/>
+
+    <TextView
+        android:id="@+id/textView15"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/textView13"
+        android:layout_below="@+id/editText2"
+        android:layout_marginTop="15dp"
+        android:text="Chai"
+        android:textColor="#000000"
+        android:textSize="26sp" />
+
+    <EditText
+        android:id="@+id/editText3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/textView15"
+        android:ems="10"
+        android:hint="Vol(mL) of water"
+        android:inputType="numberDecimal" />
+
+    <EditText
+        android:id="@+id/editText4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/editText3"
+        android:layout_marginTop="11dp"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        android:hint="Weight(g) of chai powder" />
+
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/button3"
+        android:layout_below="@+id/editText3"
+        android:onClick="calChai"
+        android:text="Calculate" />
+
+
+    <TextView
+        android:id="@+id/textView16"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editText4"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:text="Iced Tea"
+        android:textColor="#000000"
+        android:textSize="26sp" />
+
+    <EditText
+        android:id="@+id/editText5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/textView16"
+        android:ems="10"
+        android:hint="Enter the Vol(mL) of Water"
+        android:inputType="numberDecimal" />
+
+    <EditText
+        android:id="@+id/editText6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/editText5"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        android:hint="Weight(g) of iced tea" />
+
+    <Button
+        android:id="@+id/button5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/editText6"
+        android:layout_alignEnd="@+id/button4"
+        android:onClick="calIcedTea"
+        android:text="Calculate"
+         />
+
+    <TextView
+        android:id="@+id/textView17"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView15"
+        android:layout_toEndOf="@+id/textView14"
+        android:text=""
+        android:textSize="14sp"/>
+
+    <TextView
+        android:id="@+id/textView18"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/editText5"
+        android:layout_toEndOf="@+id/textView14"
+        android:text=""
+        android:textSize="14sp"/>
+
+
+</RelativeLayout>

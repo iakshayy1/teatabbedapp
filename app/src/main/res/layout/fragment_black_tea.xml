@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:background="@drawable/blacktea"
+    android:layout_height="match_parent">
+
+
+    <EditText
+        android:id="@+id/VolOfWater"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/textView11"
+        android:layout_marginEnd="74dp"
+        android:layout_marginTop="49dp"
+        android:ems="10"
+        android:hint="Volume(mL) of water"
+        android:inputType="numberDecimal" />
+
+    <EditText
+        android:id="@+id/WgtOfDryTea"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/VolOfWater"
+        android:layout_below="@+id/VolOfWater"
+        android:layout_marginTop="36dp"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        android:hint="Weight(g) of dry Tea" />
+
+    <Button
+        android:id="@+id/Calculate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:onClick="calculate"
+        android:layout_centerVertical="true"
+        android:text="Calculate" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Calculate"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="37dp"
+        android:text=""
+        android:gravity="center"
+        android:textColor="#000000"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/textView11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:text="Black Tea"
+        android:textColor="#000000"
+        android:textSize="26sp" />
+
+    <Button
+        android:id="@+id/clear"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignTop="@+id/Calculate"
+        android:layout_marginEnd="19dp"
+
+        android:text="clear" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView"
+        android:layout_centerHorizontal="true"
+        android:onClick="time"
+        android:layout_marginTop="41dp"
+        android:text="Time In Min/sec" />
+
+</RelativeLayout>

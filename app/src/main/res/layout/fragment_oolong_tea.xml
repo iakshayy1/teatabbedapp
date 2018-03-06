@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:background="@drawable/olongtea"
+    android:layout_height="match_parent">
+
+    <EditText
+        android:id="@+id/VolOfW"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="48dp"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        android:hint="Vol(mL) of water" />
+
+    <EditText
+        android:id="@+id/WgtOfDryT"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/VolOfW"
+        android:layout_below="@+id/VolOfW"
+        android:layout_marginTop="36dp"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        android:hint="Weight(g) of dry Tea" />
+
+    <Button
+        android:id="@+id/cal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Calculate"
+        android:onClick="cal"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/cal"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="37dp"
+        android:text=""
+        android:gravity="center"
+        android:textColor="#000000"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/textView12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:text="Oolong Tea"
+        android:textColor="#000000"
+        android:textSize="26sp" />
+
+    <Button
+        android:id="@+id/clr"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/cal"
+        android:layout_marginStart="12dp"
+        android:onClick="clr"
+        android:layout_toEndOf="@+id/textView12"
+        android:text="clear" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView2"
+        android:layout_centerHorizontal="true"
+        android:onClick="Otime"
+        android:layout_marginTop="41dp"
+        android:text="Time in Min/Secs" />
+</RelativeLayout>
